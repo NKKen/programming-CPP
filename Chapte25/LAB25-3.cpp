@@ -63,6 +63,15 @@ class DTriangle : public Triangle {
 		std::cout << "Area of 3D Triangle is " << (0.5 * base * height * depth) << std::endl;
 	}
 };
+class DRectangle : public Rectangle {
+	public:	
+	DRectangle(){
+		base = 5; height = 10; depth = 5;
+	}
+	void findArea() {
+		std::cout << "Area of 3D Rectangle is " << (width * length) << std::endl;
+	}
+};
 int main() {
 	Triangle tr;
 	tr.findArea();
@@ -79,6 +88,13 @@ int main() {
 	DTriangle tr3;
 	tr3.findArea();
 	tr3.perimeter();
+
+    DRectangle rec3;
+    rec.findArea();
+    rec.perimeter();
+
+
+    
 
 	return 0;
 }
